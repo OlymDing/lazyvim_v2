@@ -105,3 +105,10 @@ vim.keymap.set("n", "<A-.>", "<Cmd>BufferNext<CR>")
 vim.keymap.set("n", "<A-w>", "<Cmd>BufferClose<CR>")
 
 local blink = require('blink.cmp')
+
+-- comment
+require('nvim_comment').setup({
+  comment_empty = false,
+  line_mapping = "<C-\\>",
+  operator_mapping = "\\",
+})
