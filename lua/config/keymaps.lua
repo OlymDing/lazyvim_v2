@@ -82,3 +82,26 @@ vim.keymap.set("n", "<F7>", function()
   vim.lsp.buf.format()
 end)
 
+-- transparent toggle
+vim.keymap.set("n", "<leader>tt", function()
+  print("toggle transparent")
+  vim.cmd.TransparentToggle()
+end)
+
+-- dark/light toggle
+vim.keymap.set("n", "<F8>", function()
+  if vim.o.background == "light" then
+    vim.o.background = "dark"
+    vim.cmd.TransparentEnable()
+  else
+    vim.o.background = "light"
+    vim.cmd.TransparentDisable()
+  end
+end)
+
+-- barbar
+vim.keymap.set("n", "<A-,>", "<Cmd>BufferPrevious<CR>")
+vim.keymap.set("n", "<A-.>", "<Cmd>BufferNext<CR>")
+vim.keymap.set("n", "<A-w>", "<Cmd>BufferClose<CR>")
+
+local blink = require('blink.cmp')
