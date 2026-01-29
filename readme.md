@@ -1,0 +1,7 @@
+又到了因为底层LSP更新导致我不得不更新我的lazyvim进而不得不重新配置我的整个nvim的时候了
+
+是的，我又又又又又来配置我的neovim了
+
+依旧lazyvim，依旧那几个快捷键，禁用模块在disable.lua中，颜色单独抽了一个colorschemes.lua来存放
+
+enjoy
